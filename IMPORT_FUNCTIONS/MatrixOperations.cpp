@@ -73,6 +73,13 @@ int** multiplyMatrix(int** matrix1, const size_t &r1, const size_t &c1, int** ma
 }
 
 
+void fillEMatrix (int ** matrix, const size_t &n) {
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            matrix[i][j] = j == i ? 1 : 0;
+        }
+    }
+}
 
 
 
